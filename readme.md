@@ -49,3 +49,9 @@ nuxt.config.jsの最後の設定項目の後（buildとか）に以下を追加�
 # docker-compose exec node bash
 # npm run dev
 ```
+
+## メモ
+```
+・Middlewareはページ表示時に実行することができる（認証に使える）
+・設定は全てstoreにて管理する
+```
