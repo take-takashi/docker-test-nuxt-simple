@@ -50,6 +50,20 @@ nuxt.config.jsの最後の設定項目の後（buildとか）に以下を追加�
 # npm run dev
 ```
 
+## auth0を使う
+```
+# npm install @nuxtjs/auth
+# npm install nanoid@2.1.11
+
+※nanoid@2.1.11はバグ潰しため
+
+nuxt.config.jsを編集
+modulesに'@nuxtjs/auth'を追加
+
+$auth.getToken('auth0') でtokenを取得できる
+
+```
+
 ## メモ
 ```
 ・Middlewareはページ表示時に実行することができる（認証に使える）
@@ -59,4 +73,9 @@ nuxt.config.jsの最後の設定項目の後（buildとか）に以下を追加�
 　そうすると自動で読み込まれるし、VSCODEでも綺麗に表示される
 ・componentsで「v-bind="$attrs"」,「v-on="$listeners"」を指定するとpropやeventを継承できる！ラッパーComponentに便利
 ・loginとかcallbackとかはデフォルトレイアウトを使わないページにする
+```
+
+## TODO
+```
+・auth0のログイン時、「Default app」が許可を求めてくるので、ちゃんとしたアプリ名にする必要がありそう
 ```

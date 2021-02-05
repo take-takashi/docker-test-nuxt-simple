@@ -1,11 +1,14 @@
 <template>
     <v-container>
-        <span>test page</span>
+        <p>こんにちは、{{ $auth.$state.user.name }}さん！</p>
     </v-container>
 </template>
 
 <script>
 export default {
-    layout: 'noheader',
+    layout: 'default',
+    mounted: function() {
+        console.log(this.$auth.getToken('auth0'));
+    }
 }
 </script>

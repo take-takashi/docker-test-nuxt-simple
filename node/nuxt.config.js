@@ -45,6 +45,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -80,6 +81,26 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // For @nuxtjs/auth
+  auth: {
+    strategies: {
+      auth0: {
+        domain: 'kaerunrun.jp.auth0.com',
+        client_id: 'n4CpzmIIyQpM3BeXRLarwWkxHjt3fIfx'
+      }
+    },
+    redirect: {
+      login: '/login', // 未ログイン時のリダイレクト先
+      logout: '/', // ログアウト後のリダイレクト先
+      callback: '/callback', // コールバック
+      home: '/', // ログイン後のページ
+    }
+  },
+
+  router: {
+    middleware: 'auth' // 必ずログインを通るように設定
   },
 
   // For localhost debug

@@ -6,6 +6,7 @@
       <template>
         <v-tabs>
           <v-tab :to="'/'">index</v-tab>
+          <v-tab :to="'login'">login</v-tab>
           <v-tab :to="'test'">test</v-tab>
         </v-tabs>
       </template>

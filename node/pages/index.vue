@@ -4,6 +4,9 @@
 
         <div>
           <p>{{ $store.state.main.title }}</p>
+          <p>
+            <ButtonLogout></ButtonLogout>
+          </p>
         </div>
 
       </v-container>
@@ -12,6 +15,6 @@
 
 <script>
 export default {
-  middleware: 'test'
+  layout: 'default'
 }
 </script>
