@@ -1,9 +1,9 @@
 <template>
-  <v-app light>
+  <v-app>
     <v-app-bar app dense>
       <v-toolbar-title>{{ $store.state.main.title }}</v-toolbar-title>
 
-      <template v-slot:extension>
+      <template>
         <v-tabs>
           <v-tab :to="'/'">index</v-tab>
           <v-tab :to="'test'">test</v-tab>
@@ -13,7 +13,7 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <nuxt />
+        <Nuxt />
       </v-container>
     </v-main>
 

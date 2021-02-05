@@ -54,4 +54,9 @@ nuxt.config.jsの最後の設定項目の後（buildとか）に以下を追加�
 ```
 ・Middlewareはページ表示時に実行することができる（認証に使える）
 ・設定は全てstoreにて管理する
+・nuxt.config.jsでVuetifyのテーマ設定しないとデフォルトでdarkテーマになっている
+・componentsはパスカルケース命名規則で作成すること
+　そうすると自動で読み込まれるし、VSCODEでも綺麗に表示される
+・componentsで「v-bind="$attrs"」,「v-on="$listeners"」を指定するとpropやeventを継承できる！ラッパーComponentに便利
+・loginとかcallbackとかはデフォルトレイアウトを使わないページにする
 ```
