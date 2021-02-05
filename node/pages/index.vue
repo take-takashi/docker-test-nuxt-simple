@@ -1,6 +1,6 @@
 <template>
     <v-main>
-      <v-container fluid>
+      <v-container>
 
         <div>
           <p>{{ $store.state.main.title }}</p>
