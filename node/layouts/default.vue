@@ -8,6 +8,8 @@
           <v-tab :to="'/'">index</v-tab>
           <v-tab :to="'login'">login</v-tab>
           <v-tab :to="'test'">test</v-tab>
+          <v-tab :to="'test_api'">test_api</v-tab>
+          <v-tab :to="'test_search'">test_search</v-tab>
         </v-tabs>
       </template>
 

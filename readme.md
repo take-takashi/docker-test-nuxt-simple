@@ -64,6 +64,14 @@ $auth.getToken('auth0') でtokenを取得できる
 
 ```
 
+## server(apiのテスト用)の設定
+```
+# docker-compose run --rm server /bin/bash
+# npm init
+# npm install express express-jwt express-jwt-authz jwks-rsa cors dotenv
+# npm install --save-dev nodemon
+```
+
 ## メモ
 ```
 ・Middlewareはページ表示時に実行することができる（認証に使える）
@@ -77,5 +85,11 @@ $auth.getToken('auth0') でtokenを取得できる
 
 ## TODO
 ```
+・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）
+・ExpressからJSONをいただく（マッチング）
+・Auth0のScopeを調べたい
+・mongoDB面白そう（Docker）
 ・auth0のログイン時、「Default app」が許可を求めてくるので、ちゃんとしたアプリ名にする必要がありそう
+・全API通信時にAuthenticationヘッダーを入れるべきか
+・ログイン前に発生する「GET https://kaerunrun.jp.auth0.com/userinfo 401」エラーをなんとかしたい
 ```

@@ -9,3 +9,14 @@ services:
     working_dir: /app
     ports:
       - '3000:3000'
+    command: npm run dev
+
+  server:
+    image: node:15.5.1
+    tty: true
+    volumes:
+      - ./server:/app
+    working_dir: /app
+    ports:
+      - '3010:3010'
+    command: npm run dev
