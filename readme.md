@@ -85,8 +85,9 @@ $auth.getToken('auth0') でtokenを取得できる
 
 ## TODO
 ```
+・ページ遷移時にタブのアクティブ制御したい
+・Keep-aliveの制御をうまくしたい
 ・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）
-・ExpressからJSONをいただく（マッチング）
 ・Auth0のScopeを調べたい
 ・mongoDB面白そう（Docker）便利なのだが・・・
 ・ValidationがDBと同期できれば
