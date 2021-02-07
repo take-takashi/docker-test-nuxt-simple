@@ -88,7 +88,8 @@ $auth.getToken('auth0') でtokenを取得できる
 ・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）
 ・ExpressからJSONをいただく（マッチング）
 ・Auth0のScopeを調べたい
-・mongoDB面白そう（Docker）
+・mongoDB面白そう（Docker）便利なのだが・・・
+・ValidationがDBと同期できれば
 ・auth0のログイン時、「Default app」が許可を求めてくるので、ちゃんとしたアプリ名にする必要がありそう
 ・全API通信時にAuthenticationヘッダーを入れるべきか
 ・ログイン前に発生する「GET https://kaerunrun.jp.auth0.com/userinfo 401」エラーをなんとかしたい

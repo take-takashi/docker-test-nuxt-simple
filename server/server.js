@@ -51,6 +51,10 @@ app.get('/api/private', checkJwt, function(req, res) {
 //  });
 //});
 
+app.get('/json/*', function(req, res) {
+  res.json(require('./'+req.path+'.json'))
+});
+
 app.use(function(err, req, res, next){
   console.error(err.stack);
   return res.status(err.status).json({ message: err.message });
