@@ -110,6 +110,6 @@ export default {
 
   // For api
   serverMiddleware: [
-    { path: '/api/sample', handler: '~/api/sample.js' },
+    { path: '/api', handler: '~/api/index.js' },
   ],
 }
