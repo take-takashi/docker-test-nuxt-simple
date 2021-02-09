@@ -72,6 +72,15 @@ $auth.getToken('auth0') でtokenを取得できる
 # npm install --save-dev nodemon
 ```
 
+## Nuxtで擬似APIの設定（上記の別にExpressを立てた方が良いかも）
+```
+// nuxt.config.js
+// For api
+serverMiddleware: [
+  { path: '/api/sample', handler: '~/api/sample.js' },
+],
+```
+
 ## メモ
 ```
 ・Middlewareはページ表示時に実行することができる（認証に使える）
@@ -94,4 +103,9 @@ $auth.getToken('auth0') でtokenを取得できる
 ・auth0のログイン時、「Default app」が許可を求めてくるので、ちゃんとしたアプリ名にする必要がありそう
 ・全API通信時にAuthenticationヘッダーを入れるべきか
 ・ログイン前に発生する「GET https://kaerunrun.jp.auth0.com/userinfo 401」エラーをなんとかしたい
+```
+
+### 完了済みTODO
+```
+・試しにAPI作ってみるか？？？（ServerMiddlewareでできた）
 ```

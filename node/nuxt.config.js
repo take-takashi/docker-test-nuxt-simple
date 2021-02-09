@@ -106,5 +106,10 @@ export default {
   // For localhost debug
   server: {
     host: '0.0.0.0',
-  }
+  },
+
+  // For api
+  serverMiddleware: [
+    { path: '/api/sample', handler: '~/api/sample.js' },
+  ],
 }
