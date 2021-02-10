@@ -88,7 +88,8 @@ export default {
     strategies: {
       auth0: {
         domain: 'kaerunrun.jp.auth0.com',
-        client_id: 'n4CpzmIIyQpM3BeXRLarwWkxHjt3fIfx'
+        client_id: 'RURFhv4bxzqaqDqItn77tnzAqGReA8tg',
+        audience: 'https://kaerunrun.jp/api/',
       }
     },
     redirect: {

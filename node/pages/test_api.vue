@@ -27,10 +27,11 @@ export default {
             console.log(res)
         },
         click_private: async function() {
-            const res = await this.$axios.$post('http://localhost:3010/api/private', 
-            {}, 
+            const res = await this.$axios.$get('http://localhost:3010/api/private', 
             {
-                header: {'Authorization': this.$auth.getToken('auth0') }
+                headers: {
+                    Authorization: this.$auth.getToken('auth0')
+                }
             })
             console.log(res)
         },
