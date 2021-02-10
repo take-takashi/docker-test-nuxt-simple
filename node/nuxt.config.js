@@ -97,7 +97,10 @@ export default {
       logout: '/', // ログアウト後のリダイレクト先
       callback: '/callback', // コールバック
       home: '/', // ログイン後のページ
-    }
+    },
+    plugins: [
+      '~/plugins/axios/api'
+    ]
   },
 
   router: {
