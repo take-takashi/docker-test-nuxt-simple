@@ -6,5 +6,6 @@
         <v-tab to="test_search">search</v-tab>
         <v-tab to="test_table">table</v-tab>
         <v-tab to="test_image">image</v-tab>
+        <v-tab to="test_env">env</v-tab>
     </v-tabs>
 </template>

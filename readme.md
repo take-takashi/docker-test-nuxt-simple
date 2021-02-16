@@ -95,10 +95,8 @@ serverMiddleware: [
 
 ## TODO
 ```
-・prodの時はkeep-aliveにしたい
-・リンクを設定ファイル化したい（local.settings.jsonみたいな）
+・リンクを設定ファイル化したい（envで記載か）
 ・Auth0が繋がったので、不要な設定やapp、apiを削除していきたい
-・ページ遷移時にタブのアクティブ制御したい
 ・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）
 ・Auth0のScopeを調べたい
 ・mongoDB面白そう（Docker）便利なのだが・・・
@@ -110,6 +108,7 @@ serverMiddleware: [
 
 ### 完了済みTODO
 ```
+・prodの時はkeep-aliveにしたい（おそらくできた）
 ・試しにAPI作ってみるか？？？（ServerMiddlewareでできた）
 ・Keep-aliveの制御をうまくしたい
 ・全API通信時にAuthenticationヘッダーを入れるべきか　⇨　api通信時は$axiosインスタンスから$apiを新規作成して利用するようにした
