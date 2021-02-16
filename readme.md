@@ -95,6 +95,8 @@ serverMiddleware: [
 
 ## TODO
 ```
+・prodの時はkeep-aliveにしたい
+・リンクを設定ファイル化したい（local.settings.jsonみたいな）
 ・Auth0が繋がったので、不要な設定やapp、apiを削除していきたい
 ・ページ遷移時にタブのアクティブ制御したい
 ・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）

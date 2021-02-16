@@ -1,3 +1,3 @@
 export const state = () => ({
-    title: 'TITLE TEST'
+    title: 'TEST TITLE'
 })

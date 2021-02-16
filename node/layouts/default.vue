@@ -1,24 +1,23 @@
 <template>
-  <v-app>
-    <v-app-bar app dense>
-      <v-toolbar-title>{{ $store.state.main.title }}</v-toolbar-title>
+    <v-app>
+        <v-app-bar app dense>
+            <v-toolbar-title class="title">
+                <span>{{ $store.state.main.title }}</span>
+            </v-toolbar-title>
+            <LayoutMenu></LayoutMenu>
+        </v-app-bar>
+        <v-main>
+            <Nuxt keep-alive />
+        </v-main>
 
-      <template>
-        <v-tabs>
-          <v-tab to="/">index</v-tab>
-          <v-tab to="test">test</v-tab>
-          <v-tab to="test_api">test_api</v-tab>
-          <v-tab to="test_search">test_search</v-tab>
-        </v-tabs>
-      </template>
-
-    </v-app-bar>
-    <v-main>
-      <v-container>
-        <Nuxt keep-alive />
-      </v-container>
-    </v-main>
-
-    <LayoutFooter></LayoutFooter>
-  </v-app>
+        <LayoutFooter></LayoutFooter>
+    </v-app>
 </template>
+
+<style lang="scss" scoped>
+// タイトルが勝手に省略されるのを防ぐ
+.title {
+    overflow: visible;
+    text-overflow: unset;
+}
+</style>
