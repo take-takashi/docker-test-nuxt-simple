@@ -83,6 +83,7 @@ serverMiddleware: [
 
 ## メモ
 ```
+・keep-aliveの影響下では、mountedではなく、activatedを使うとページ遷移時に発動する関数が利用できる
 ・Middlewareはページ表示時に実行することができる（認証に使える）
 ・設定は全てstoreにて管理する
 ・nuxt.config.jsでVuetifyのテーマ設定しないとデフォルトでdarkテーマになっている
@@ -96,17 +97,18 @@ serverMiddleware: [
 ```
 ・Auth0が繋がったので、不要な設定やapp、apiを削除していきたい
 ・ページ遷移時にタブのアクティブ制御したい
-・Keep-aliveの制御をうまくしたい
 ・APIからページ構造化データを取得する（実際は辞書くらいしかできなそう）
 ・Auth0のScopeを調べたい
 ・mongoDB面白そう（Docker）便利なのだが・・・
 ・ValidationがDBと同期できれば
 ・auth0のログイン時、「Default app」が許可を求めてくるので、ちゃんとしたアプリ名にする必要がありそう
-・全API通信時にAuthenticationヘッダーを入れるべきか
 ・ログイン前に発生する「GET https://kaerunrun.jp.auth0.com/userinfo 401」エラーをなんとかしたい
+・console.logのワーニングを消したい
 ```
 
 ### 完了済みTODO
 ```
 ・試しにAPI作ってみるか？？？（ServerMiddlewareでできた）
+・Keep-aliveの制御をうまくしたい
+・全API通信時にAuthenticationヘッダーを入れるべきか　⇨　api通信時は$axiosインスタンスから$apiを新規作成して利用するようにした
 ```

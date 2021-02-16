@@ -33,7 +33,9 @@
             </div>
 
             <div>
-                <nuxt-link :to="'/test_userinfo?user_id=123'">test_userinfo</nuxt-link>
+                <nuxt-link to="/test_userinfo?user_id=123">test_userinfo01</nuxt-link>
+                <nuxt-link to="/test_userinfo?user_id=001">test_userinfo02</nuxt-link>
+                <nuxt-link to="/test_userinfo?user_id=999">test_userinfo99</nuxt-link>
             </div>
             
         </v-form>
